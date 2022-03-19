@@ -5,33 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <script src="https://use.fontawesome.com/6aff44cba5.js"></script>
+    <script src="https://kit.fontawesome.com/e955888db8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 </head>
-
-<body>
-    <body class="main-content">
-        <header class="section sec1 header active">
-            
-        </header>
-        <main>
-            <section class="section sec2 about"></section>
-            <section class="section sec3 portfolio"></section>
-            <section class="section sec4 blog"></section>
-            <section class="section sec5 contact"></section>
-        </main>
-        <div class="controls">
-            <div class="control control-1 active-btn">
-                hrllo
+<body class="main-content">
+    <header class="section sec1 header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image"><img src="images/profile1.png" alt="Profile Picture of the Creator"></div>
             </div>
-            <div class="control control-2"></div>
-            <div class="control control-3"></div>
-            <div class="control control-4"></div>
-            <div class="control control-5"></div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span>Shaik Idris.</span>
+                    A Computer Science Engineer.
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sunt assumenda doloremque, reiciendis quis ipsa qui numquam fugit tempora aut eos ratione porro accusantium ipsam et amet ea officiis eveniet!
+                    Atque beatae ullam laudantium hic. Dicta assumenda iure eaque, eum labore inventore perspiciatis, ipsa facilis reiciendis illo error provident nesciunt ipsam neque aut. Reprehenderit dolores repudiandae hic rerum in numquam!
+                </p>
+                <div class="btn-container">
+                    <a href="" class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+                    </a>
+                </div>
+            </div>
         </div>
-    </body>
+    </header>
+    <main>
+        <section class="section sec2 about" id="about">
+            <div class="main-title">
+                <h2>About <span>Me</span><span class="bg-text"> My Stats</span></h2>
+            </div>
+        </section>
+        <section class="section sec3 portfolio" id="portfolio"></section>
+        <section class="section sec4 blog" id="blog"></section>
+        <section class="section sec5 contact" id="contact"></section>
+    </main>
+    <div class="controls">
+        <div class="control control-1 active-btn" data-id="home">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="control control-2" data-id="about">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="control control-3" data-id="portfolio">
+            <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <div class="control control-4" data-id="blog">
+            <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <div class="control control-5" data-id="contact">
+            <i class="fa-solid fa-envelope-open"></i>
+        </div>
+    </div>
+<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
