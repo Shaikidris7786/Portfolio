@@ -262,6 +262,77 @@ section {
     }
 }
 
+.about-stats{
+    padding-bottom: 4rem;
+    .skills{
+        border: 1px solid var(--color-grey-5);
+        border-radius: 20px;
+        box-shadow: 1px 2px 15 px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2rem;
+        span{
+            visibility: hidden;
+        }
+        &:hover{
+            transition: all 0.4s ease-in-out;
+            border: 1px solid var(--color-secondary);
+            background-color: var(--color-grey-5);
+            transform: scale(1.1);
+            box-shadow: 1px 4px 15 px rgba(0, 0, 0, 0.32);
+            p{
+                color: var(--color-white); 
+            }
+        }
+        p{
+            color: var(--color-grey-2);
+            font-weight: 800;
+            &:hover{
+                color: var(--color-secondary);
+                transition: all 0.4s ease-in-out;
+                .html{
+                    visibility: visible;
+                }
+                .css{
+                    visibility: visible;
+                }
+                .js{
+                    visibility: visible;
+                }
+                .python{
+                    visibility: visible;
+                }
+                .java{
+                    visibility: visible;
+                }
+                .aws{
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+.stat-title {
+    padding: 3.5rem 0;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    text-align: center;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 40%;
+        height: 3px;
+        background-color: var(--color-grey-5);
+        transform: translateX(-50%);
+    }
+}
+
+
 // Independent Component
 .btn-container{
     display: flex;
