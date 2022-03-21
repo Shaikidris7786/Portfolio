@@ -172,6 +172,18 @@ section {
           box-shadow: var(--box-shadow-1);
 }
 
+.controls .control:hover {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-color: var(--color-grey-5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.controls .control:hover i {
+  color: var(--color-secondary);
+}
+
 .controls .control i {
   font-size: 1.3rem;
   color: var(--color-grey-2);
