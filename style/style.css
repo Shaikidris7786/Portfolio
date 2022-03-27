@@ -378,6 +378,8 @@ section {
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   gap: 2rem;
 }
 
@@ -404,6 +406,8 @@ section {
   color: var(--color-grey-2);
   font-weight: 800;
   text-align: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .about-stats .skills p:hover {

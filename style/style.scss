@@ -279,6 +279,7 @@ section {
         padding: 1rem;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+        transition: all 0.4s ease-in-out;
         gap: 2rem;
         span{
             visibility: hidden;
@@ -290,13 +291,14 @@ section {
             transform: scale(1.1);
             box-shadow: 1px 4px 15 px rgba(0, 0, 0, 0.32);
             p{
-                color: var(--color-white); 
+                color: var(--color-white);
             }
         }
         p{
             color: var(--color-grey-2);
             font-weight: 800;
             text-align: center;
+            transition: all 0.4s ease-in-out;
             &:hover{
                 color: var(--color-secondary);
                 transition: all 0.4s ease-in-out;
