@@ -752,6 +752,7 @@ section {
       -ms-flex: 3;
           flex: 3;
   margin-top: 3rem;
+  margin-left: 3rem;
 }
 
 .contact-content-con .right-contact .input-control {
