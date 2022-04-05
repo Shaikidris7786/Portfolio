@@ -970,6 +970,49 @@ section {
   font-size: 6.3rem;
 }
 
+@media screen and (max-width: 540px) {
+  .header-content .right-header .name {
+    font-size: 1.5rem !important;
+  }
+  .about-container {
+    padding-top: 2rem;
+  }
+  .about-container .left-about h4 {
+    font-size: 1.5rem !important;
+  }
+  .portfolios {
+    margin-top: 2rem;
+  }
+  .portfolio-text {
+    padding: 1rem 0 0 0;
+  }
+  .contact-content-con {
+    padding-top: 1.5rem;
+  }
+  .contact-content-con .left-contact h4 {
+    font-size: 1.5rem !important;
+  }
+  .contact-content-con .right-contact {
+    margin-top: 1rem !important;
+  }
+  body {
+    font-size: 0.8rem !important;
+  }
+  .section {
+    padding: 2rem 2.5rem;
+    padding-left: 1.5rem !important;
+  }
+  .main-title h2 {
+    font-size: 1.5rem !important;
+  }
+  .main-title h2 span {
+    font-size: 2rem !important;
+  }
+  .main-title h2 .bg-text {
+    font-size: 2.8rem !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
   header {
     padding: 0;
@@ -1062,8 +1105,8 @@ section {
         grid-template-columns: repeat(3, 1fr);
   }
   .portfolios {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
     padding-bottom: 5rem;
   }
   .contact-content-con {
@@ -1102,7 +1145,7 @@ section {
     padding: 2rem 2.5rem;
   }
   body {
-    font-size: 1rem !important;
+    font-size: rem !important;
   }
 }
 
