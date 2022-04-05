@@ -1,0 +1,239 @@
+@media screen and (max-width: 600px) {
+    header {
+        padding: 0;
+    }
+    header .right-header{
+        padding: 0rem !important;
+    }
+
+    .controls{
+        top: auto;
+        bottom: -1px;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+        .control{
+            margin: 1rem .3rem;
+        }
+    }
+
+    .theme-btns{
+        top: 1%;
+        right: 1%;
+        flex-direction: column;
+        .theme-btn{
+            padding: 1rem;
+            margin-top: .5rem;
+        }
+    }
+
+    // Changing the 2 columns to 1
+    .header-content {
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+
+        .left-header {
+            .h-shape {
+                display: none;
+            }
+            .image {
+                margin: 0 auto;
+                width: 90%;
+                img{
+                    filter: grayscale(0%);
+                }
+            }
+        }
+
+        .right-header {
+            grid-row: 1;
+            width: 90%;
+            margin: 0 auto;
+            .name{
+                text-align: left;
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    // About Page
+    .about-container {
+        grid-template-columns: 1fr;
+        .right-about {
+            grid-template-columns: 1fr;
+            padding-top: 2.5rem;
+        }
+        .left-about {
+            padding-right: 0;
+            h4{
+                font-size: 1.5rem;
+            }
+            p{
+                padding-left: 0;
+            }
+        }
+    }
+
+    .timeline {
+        grid-template-columns: 1fr;
+        padding-bottom: 5rem;
+    }
+
+    .about-stats {
+        .skills {
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+
+    .portfolios {
+        grid-template-columns: 1fr;
+        padding-bottom: 5rem;
+    }
+
+    .contact-content-con {
+        flex-direction: column;
+        .right-contact {
+            margin-left: 0;
+            margin-top: 2.5rem;
+            .input-control-2{
+                flex-direction: column;
+                & :last-child{
+                    margin-left: 0;
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+        
+        .left-contact {
+            h4{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .main-title{
+        h2{
+            font-size: 2rem;
+            span{
+                font-size: 2.5rem;
+            }
+            .bg-text{
+                font-size: 3.5rem;
+            }
+        }
+    }
+
+    .section {
+        padding: 2rem 2.5rem;
+    }
+    body{
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header-content {
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+
+        .left-header {
+            .h-shape {
+                display: none;
+            }
+            .image {
+                margin: 0 auto;
+                margin-right: 3rem;
+                width: 100%;
+                img{
+                    filter: grayscale(0%);
+                }
+            }
+        }
+        .right-header {
+            grid-row: 1;
+            width: 100%;
+            margin: 0 auto;
+            padding-right: 3rem;
+            .name{
+                text-align: left;
+                font-size: 2.3rem;
+            }
+        }
+    }
+    
+    .about-container {
+        grid-template-columns: 1fr;
+        .right-about {
+            padding-top: 2.5rem;
+        }
+        .left-about {
+            padding-right: 0;
+            h4{
+                font-size: 2rem;
+            }
+            p{
+                padding-left: 0;
+            }
+        }
+    }
+
+    .timeline {
+        grid-template-columns: 1fr;
+        padding-bottom: 5rem;
+    }
+
+    .about-stats {
+        .skills {
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+
+    .stat-title {
+        font-size: 1.8rem;
+    }
+    
+    .portfolios {
+        grid-template-columns: repeat(2,1fr);
+        padding-bottom: 5rem;
+    }
+    
+    .contact-content-con {
+        flex-direction: column;
+        .right-contact {
+            margin-left: 0;
+            margin-top: 2.5rem;
+            .input-control-2{
+                flex-direction: column;
+                & :last-child{
+                    margin-left: 0;
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+        
+        .left-contact {
+            h4{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .main-title{
+        h2{
+            font-size: 3.5rem;
+            span{
+                font-size: 4rem;
+            }
+            .bg-text{
+                font-size: 5.9rem;
+            }
+        }
+    }
+
+    .section {
+        padding: 2rem 2.5rem;
+    }
+}
