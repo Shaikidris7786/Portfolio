@@ -32,7 +32,7 @@ form.addEventListener('submit',function(e){
   var requestOptions = {
     method: 'POST',
     headers: myHeaders,
-    body: raw,
+    body: raw
   };
   
   fetch("https://demo-marscotest.gainsightcloud.com/v1.0/api/eventManager/event", requestOptions)
