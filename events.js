@@ -33,7 +33,6 @@ form.addEventListener('submit',function(e){
     method: 'POST',
     headers: myHeaders,
     body: raw,
-    redirect: 'follow'
   };
   
   fetch("https://demo-marscotest.gainsightcloud.com/v1.0/api/eventManager/event", requestOptions)
