@@ -23,10 +23,10 @@ form.addEventListener('submit',function(e){
   console.log(myHeaders)
 
   var raw = JSON.stringify({
-    "Subject": Subject,
-    "Message": Message,
-    "Email": Email,
-    "Name": Name
+    "Subject": Subject.value,
+    "Message": Message.value,
+    "Email": Email.value,
+    "Name": Name.value
   });
   
   var requestOptions = {
