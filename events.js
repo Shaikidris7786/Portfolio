@@ -36,7 +36,10 @@ form.addEventListener('submit',function(e){
   };
   
   fetch("https://demo-marscotest.gainsightcloud.com/v1.0/api/eventManager/event", requestOptions)
-    .then(response => response.text())
+    .then(response => {
+    console.log(response.status); // Check the status code
+    return response.text();
+  })
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
     
