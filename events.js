@@ -19,6 +19,7 @@ form.addEventListener('submit',function(e){
   myHeaders.append("sharedSecret", "uy5RgBP+9FfescqwBFjU7fsE/jxH3RI/kkJ+pv5g3D5RuUAprW3+tu5f5MR95x1R");
   myHeaders.append("accessKey", "97f48900-33a5-44f4-b591-6c7a19f01d1a");
   myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("'Access-Control-Allow-Origin': '*');
 
   console.log(myHeaders)
 
