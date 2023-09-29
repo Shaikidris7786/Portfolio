@@ -19,9 +19,6 @@ form.addEventListener('submit',function(e){
   myHeaders.append("sharedSecret", "uy5RgBP+9FfescqwBFjU7fsE/jxH3RI/kkJ+pv5g3D5RuUAprW3+tu5f5MR95x1R");
   myHeaders.append("accessKey", "97f48900-33a5-44f4-b591-6c7a19f01d1a");
   myHeaders.append("Content-Type", "application/json");
-  myHeaders.append("Access-Control-Allow-Origin", "*");
-  myHeaders.append("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");
-  myHeaders.append("Access-Control-Allow-Headers", "X-Requested-With, Content-Type, Authorization, Origin, Accept")
 
   console.log(myHeaders)
 
@@ -38,7 +35,7 @@ form.addEventListener('submit',function(e){
     body: raw
   };
   
-  fetch("https://demo-marscotest.gainsightcloud.com/v1.0/api/eventManager/event", requestOptions)
+  fetch("https://cors-anywhere.herokuapp.com/https://demo-marscotest.gainsightcloud.com/v1.0/api/eventManager/event", requestOptions)
     .then(response => {
     console.log(response.status); // Check the status code
     return response.text();
