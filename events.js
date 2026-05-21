@@ -21,7 +21,7 @@ form.addEventListener('submit',function(e){
     })
   };
 
-  fetch("/.netlify/functions/event", requestOptions)
+  fetch("/netlify/functions/event", requestOptions)
     .then(response => response.json())
     .then(result => {
       console.log(result);
