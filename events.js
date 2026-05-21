@@ -35,7 +35,7 @@ form.addEventListener('submit',function(e){
     body: raw
   };
   
-  fetch("https://cors-anywhere.herokuapp.com/https://demo-marscotest.gainsightcloud.com/v1.0/api/eventManager/event", requestOptions)
+  fetch("https://demo-marscotest.gainsightcloud.com/v1.0/api/eventManager/event", requestOptions)
     .then(response => {
     console.log(response.status); // Check the status code
     return response.text();
